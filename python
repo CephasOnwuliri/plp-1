@@ -1,0 +1,32 @@
+def calculator():
+    num1=int(input("Input the first number"))
+    num2=int(input("Input the second number"))
+    print("Select Operator")
+    print("+ for addition")
+    print("- for subtraction")
+    print("* for multiplication")
+    print("/ for division")
+    operation = input("Enter operator symbol: ")
+    if operation=="+":
+        result= num1 + num2
+        print(f"{num1}+{num2}={result}")
+    elif operation=="-":
+        result= num1 - num2
+        print(f"{num1}-{num2}={result}")
+    elif operation=="*":
+        result= num1*num2
+        print(f"{num1}*{num2}={result}")
+    elif operation=="/":
+        if num2==0:
+            print("Indivisible by zero")
+        else:
+            result= num1/num2
+            print(f"{num1} / {num2}={result}")
+    else:
+        ("Invalid operator. Select '+','-','*','/' ")
+    
+if __name__ == "__main__":
+    calculator()
+        
+    
+    
